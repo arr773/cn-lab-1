@@ -19,7 +19,7 @@ int checksum(int fl)
     }
     if(fl==1)
     {
-        printf("Enter the checksum value \n");
+        printf("Enter the checksum value : ");
         scanf ("%x", &temp);
         sum+=temp;
     }
@@ -29,7 +29,6 @@ int checksum(int fl)
         sum=(sum/65536) + n;
     }
     sum=65535-sum;
-    printf("%x\n",sum);
     return sum;
 }
 void main()
@@ -42,11 +41,11 @@ void main()
         scanf("%d",&ch);
         switch(ch)
         {
-            case 1: printf("Enter the string \n");
+            case 1: printf("Enter the string : ");
                     sum=checksum(0);
-                    printf("Checksum to append is:%x \n",sum);
+                    printf("Checksum to append is : %x \n",sum);
                     break;
-            case 2: printf("Enter the string \n");
+            case 2: printf("Enter the string : ");
                     sum=checksum(1);
                     if(sum!=0)
                         printf("The data has been tampered with or invalid checksum\n");
