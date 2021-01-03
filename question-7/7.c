@@ -1,4 +1,3 @@
-
 #include<stdio.h>
 #include<stdlib.h>
 #define MIN(x,y) (x>y)?y:x
@@ -9,14 +8,14 @@ int main()
     inp[10]={0},i=0,nsec,ch;
     printf(" \n Enter bucket size : ");
     scanf("%d",&cap);
-    printf("\n Enter output rate :");
+    printf("\n Enter output rate : ");
     scanf("%d",&orate);
     do
     {
         printf("\n Enter number of packets coming at second %d : ",i+1);
         scanf("%d",&inp[i]);
         i++;
-        printf("\n Enter 1 to contiue or 0 to quit..........");
+        printf("\n Enter 1 to contiue or 0 to quit : ");
         scanf("%d",&ch);
     }while(ch);
     
@@ -49,4 +48,3 @@ int main()
     }
     return 0;
 }
-
